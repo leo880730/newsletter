@@ -138,5 +138,7 @@ img {
 
 .learn-more-btn {
   border-color: transparent;
+  background-color: transparent;
+  color: #333;
   cursor: pointer;
 }
