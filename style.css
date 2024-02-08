@@ -142,3 +142,19 @@ img {
   color: #333;
   cursor: pointer;
 }
+
+.article {
+  font-size: 18px
+}
+
+.title {
+  font-size: 18px
+}
+
+.date {
+  font-size: 10px;
+}
+
+.content {
+  font-size: 10px;
+}
