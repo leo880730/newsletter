@@ -63,6 +63,7 @@ submitBtn.addEventListener('click', function () {
 
 
 function learnMore() {
+  document.querySelector('.loader').style.display = "block"
 
   $.ajax({
     // methods: 'get',
@@ -70,20 +71,31 @@ function learnMore() {
     url: "https://script.google.com/macros/s/AKfycbyLEceyRJHgdkhat5ETkiOcj_C_nUg8OO6sJi9WuMayjniC-5jk5WDNngAHoF0pu3QP/exec",
 
     success: function (response) {
+
       console.log(response)
       console.log(typeof (response))
-
-      body.innerHTML = ``
+      body.innerHTML = `
+        <div class="home-container">
+          <nav class="nav-bar">
+            <img class="nav-img" src="./img/avatar.png" alt="">
+            <h1 class="nav-title">洋洋の電子報</h1>
+            <button class="nav-button">subscribe</button>
+          </nav>
+        </div>
+      `
+      let home = document.querySelector('.home-container')
       for (let i = response.length - 1; i >= 0; i--) {
-        body.innerHTML += `
-           <div class="accordion" id="accordionPanelsStayOpenExample">
+        home.innerHTML += `
+          <div class="accordion" id="accordionPanelsStayOpen${i}">
             <div class="article" id="article-${i}">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapse${i}" aria-expanded="false"
                   aria-controls="panelsStayOpen-collapse${i}">
-                  <h1 class="title" id="title-${i}">${response[i].title}</h1>
-                  <h2 class="date" id="date-${i}">${response[i].date}</h2>
+                  <div class="title-container">
+                    <h1 class="title" id="title-${i}">${response[i].title}</h1>
+                    <h2 class="date" id="date-${i}">${response[i].date}</h2>
+                  </div>
                 </button>
               </h2>
               <div id="panelsStayOpen-collapse${i}" class="accordion-collapse collapse"
@@ -104,10 +116,3 @@ function learnMore() {
 
 let learnMoreBtn = document.querySelector('.learn-more-btn')
 learnMoreBtn.addEventListener('click', learnMore)
-
-
-// < div class="article" id = "article-${i}" >
-//           <h1 class="title" id="title-${i}" >${response[i].title}</h1>
-//           <h2 class="date" id="date-${i}" >${response[i].date}</h2>
-//           <p class="content" id="content-${i}">${response[i].content}</p>
-//         <div>
