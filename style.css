@@ -138,12 +138,12 @@ img {
 }
 
 .learn-more-btn {
-  position: relative;
+  position: absolute;
   border-color: transparent;
   background-color: transparent;
   color: #333;
   cursor: pointer;
-  top: 44%;
+  top: 68%;
   left: 26%;
   width: 48%;
 }
