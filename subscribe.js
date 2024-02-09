@@ -38,9 +38,9 @@ submitBtn.addEventListener('click', function () {
                 <h1 class="success-title">訂閱成功啦！</h1>
                 <h2 class="success-message">稍後會收到一封確認信，如果沒收到的話可以翻翻垃圾郵件，或是你的信箱輸入錯了，重新輸入一次就好囉！</h2>
               </div>
-              <div class="btn-container">
+              
                 <button class="learn-more-btn" onclick="location.href='./home.html'">Learn More　〉</button>
-              </div>
+              
             </div>
           `
           // let learnMoreBtn = document.querySelector('.learn-more-btn')

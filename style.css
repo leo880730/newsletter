@@ -132,16 +132,20 @@ img {
 
 .btn-container {
   position: relative;
-  width: 40%;
+  width: 46%;
   top: 44%;
   left: 35%;
 }
 
 .learn-more-btn {
+  position: relative;
   border-color: transparent;
   background-color: transparent;
   color: #333;
   cursor: pointer;
+  top: 44%;
+  left: 26%;
+  width: 48%;
 }
 
 .home-container {
