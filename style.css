@@ -143,6 +143,17 @@ img {
   background-color: transparent;
   color: #333;
   cursor: pointer;
+  top: 84%;
+  left: 26%;
+  width: 48%;
+}
+
+.result-learn-more-btn {
+  position: absolute;
+  border-color: transparent;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
   top: 68%;
   left: 26%;
   width: 48%;
