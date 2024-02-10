@@ -20,7 +20,7 @@ submitBtn.addEventListener('click', function () {
       // url: "",
 
       //測試版
-      url: "https://script.google.com/macros/s/AKfycbyhUFXfiAYLhn6Hb51S6BPcQFk8-pr0RL3VSVPSY1dbt3-I2RRELoDqObnDlP8CUtFj0Q/exec",
+      url: "https://script.google.com/macros/s/AKfycbypAdzpfJSbhYnzxIhBwH8w4ab6sK5Aywz7vliSw0V60NTLELJ9coe6nYUckwZ2ATvcog/exec",
 
       data: {
         "name": recipient,
