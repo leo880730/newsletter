@@ -20,7 +20,7 @@ submitBtn.addEventListener('click', function () {
       // url: "",
 
       //測試版
-      url: "https://script.google.com/macros/s/AKfycbwb-Iqmp1_H5nHeuQ2uIo20OaGPgCZ5LRBX2zaIiloSsYzt8iEp2igO2tHzeOGpmAvYYA/exec",
+      url: "https://script.google.com/macros/s/AKfycbzUckTgAQAt8BOrXmoCRz1FmcQUVPRpFMn7t6PL7Xx06uvOwf0TDc1aPb4rf9DAUMjqWQ/exec",
 
       data: {
         "name": recipient,
@@ -39,7 +39,7 @@ submitBtn.addEventListener('click', function () {
                 <h2 class="success-message">稍後會收到一封確認信，如果沒收到的話可以翻翻垃圾郵件，或是你的信箱輸入錯了，重新輸入一次就好囉！</h2>
               </div>
               
-                <button class="learn-more-btn" onclick="location.href='./home.html'">Learn More　〉</button>
+                <button class="result-learn-more-btn" onclick="location.href='./home.html'">Learn More　〉</button>
               
             </div>
           `
