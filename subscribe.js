@@ -13,7 +13,7 @@ submitBtn.addEventListener('click', function () {
   emailRule = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/
 
   if (address.search(emailRule) != -1) {
-    document.querySelector('.loader').style.display = "block"
+    // document.querySelector('.loader').style.display = "block"
 
     $.ajax({
       //正式版

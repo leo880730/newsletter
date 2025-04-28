@@ -99,6 +99,23 @@ img {
   margin-top: 40vh;
 }
 
+.redirection {
+  max-width: 820px;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.8;
+  display: block;
+  text-align: center;
+}
+
+#redirectText {
+  color: #fff;
+  margin-top: 40vh;
+}
+
 .success-content {
   height: 86%;
 }
