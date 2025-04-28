@@ -1,7 +1,7 @@
 //home page render here
 
 window.onload = function () {
-  document.querySelector('.loader').style.display = "block"
+  // document.querySelector('.loader').style.display = "block"
   let home = document.querySelector('.home-container')
   $.ajax({
     // methods: 'get',
